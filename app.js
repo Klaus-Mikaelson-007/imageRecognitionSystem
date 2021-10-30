@@ -62,7 +62,7 @@ app.listen(port, () => {
 async function upload(inputFile) {
     try {
         let file = inputFile;
-        let filePath = `./public/uploads/${file.name}`
+        let filePath = `./${file.name}`
         await file.mv(filePath);
 
         return file;
@@ -75,11 +75,11 @@ async function image(file) {
     try {
 
         console.log(file)
-        let image = fs.readFileSync(`./public/uploads/${file.name}`);
+        let image = fs.readFileSync(`./${file.name}`);
         
         let decodedImage;
 
-        fs.unlinkSync(`./public/uploads/${file.name}`);
+        fs.unlinkSync(`./${file.name}`);
 
         if (file.mimetype == 'image/jpeg') {
             decodedImage = jpeg.decode(image, true)
