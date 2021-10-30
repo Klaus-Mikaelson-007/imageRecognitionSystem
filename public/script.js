@@ -30,7 +30,7 @@ const onSumbit = (e) => {
 
     $('#progress').show();
 
-    console.log(image.files[0]);
+    // console.log(image.files[0]);
 
     var data = new FormData()
     data.append('image', image.files[0])
@@ -44,7 +44,9 @@ const onSumbit = (e) => {
         .then(result => {
             console.log("Success")
             $('#progress').hide()
-            console.log(result)
+            
+            // console.log(result)
+            // console.log("Success")
 
             prediction.innerHTML = `<h3> This looks ${result.prediction.probability}% ${result.prediction.name} to me <h3>`;
 
