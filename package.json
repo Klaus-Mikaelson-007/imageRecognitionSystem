@@ -4,7 +4,8 @@
   "description": "Return image name by analysing the image",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "startdev": "node app.js"
   },
   "author": "Aromal",
   "license": "MIT",
