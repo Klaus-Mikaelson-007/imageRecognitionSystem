@@ -1,0 +1,19 @@
+body{
+    background-color: bisque;
+}
+.container{
+    height: fit-content;
+    min-height: 70vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#uploadImage{
+    height: 200px;
+}
+
+footer{
+    bottom: 0;
+    position: relative;
+    margin-top: 12.5vh;
+}
